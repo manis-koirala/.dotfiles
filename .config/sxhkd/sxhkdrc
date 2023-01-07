@@ -1,0 +1,37 @@
+# Volume Controls
+XF86AudioRaiseVolume
+	pamixer -i 8
+XF86AudioLowerVolume
+	pamixer -d 8
+XF86AudioMute
+	pamixer -{m,u}	
+
+#Brightness Controls
+XF86MonBrightness{Up,Down}  
+    	brightnessctl s 5%{+,-}
+
+#Application Launchers
+
+#Launch Zathura
+alt+ctrl+z
+	zathura
+alt+ctrl+f
+	firefox
+alt+ctrl+r
+	st -e ranger
+alt+ctrl+e
+	emacsclient -c
+
+#Music Controls
+
+#run the mpd daemon
+alt+shift+u
+	mpd --kill
+alt+shift+y
+	mpd
+alt+shift+o
+	mpc next
+alt+shift+i
+	mpc prev
+alt+shift+p
+	mpc {pause,play}
