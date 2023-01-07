@@ -18,6 +18,13 @@ alias pacrd='sudo pacman -Rcns $(pacman -Qtdq)'
 # Alias for dotfiles management
 alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+# System wide aliases
+alias pen='sudo mount /dev/sdb /mnt/flash ; cd /mnt/flash'
+alias penr='sudo umount /dev/sdb'
+
+# MY ASCII ART
+~/.scripts/ascii
+
 
 alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 PS1='[\u@\h \W]\$ '
